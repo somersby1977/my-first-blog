@@ -1,4 +1,34 @@
 <html>
+    <h1>ЧТО ТАКОЕ КОНТЕКСТНАЯ РЕКЛАМА?</h1>
     <p>Hi there!</p>
     <p>It works!</p>
+    <em>Тип интернет-рекламы, при котором рекламное объявление показывается в соответствии с содержанием, контекстом интернет-страницы (лат. contextus — соединение, связь).
+</em>
+
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+        </div>
+
+        <div>
+           {% for post in posts %}
+    {{ post }}
+{% endfor %}
+        </div>
+    </body>
+</html>
 </html>
